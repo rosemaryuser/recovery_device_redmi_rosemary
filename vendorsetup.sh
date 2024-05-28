@@ -80,7 +80,7 @@ if [ -f "$(gettop)/bootable/recovery/orangefox.cpp" ]; then
 		export FOX_USE_SPECIFIC_MAGISK_ZIP="$(gettop)/device/redmi/rosemary/Magisk/Magisk.zip"
 
         export BUNDLED_MAGISK_VER="27.0"
-        export BUNDLED_MAGISK_SUM="F511BD33D3242911D05B0939F910A3133EF2BA0E0FF1E098128F9F3CD0C16610" # Sha256 sum of the prebuilt magisk
+        export BUNDLED_MAGISK_SUM="f511bd33d3242911d05b0939f910a3133ef2ba0e0ff1e098128f9f3cd0c16610" # Sha256 sum of the prebuilt magisk
 
             if [ -f "${FOX_USE_SPECIFIC_MAGISK_ZIP}" -a "$(sha256sum "${FOX_USE_SPECIFIC_MAGISK_ZIP}" 2>/dev/null | awk '{print $1}')" != "${BUNDLED_MAGISK_SUM}" ]
             then
