@@ -4,6 +4,6 @@
 		"repository": "RedmiNote10S/android_kernel_redmi_rosemary",
 		"target_path": "kernel/redmi/rosemary",
 		"revision": "lineage-18.1"
-                "Branch": "lineage-18.1"
+                "branch": "lineage-18.1"
     }
 ]
