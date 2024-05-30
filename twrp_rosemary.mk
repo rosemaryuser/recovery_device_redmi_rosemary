@@ -33,7 +33,7 @@ $(call inherit-product, vendor/twrp/config/common.mk)
 PRODUCT_DEVICE := rosemary
 PRODUCT_NAME := twrp_rosemary
 PRODUCT_BRAND := Redmi
-PRODUCT_MODEL := rosemary
+PRODUCT_MODEL := Redmi Note 10S
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_RELEASE_NAME := Redmi Note 10S
 
