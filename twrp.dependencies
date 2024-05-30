@@ -1,8 +1,7 @@
 [
     {
 		"remote": "github",
-		"repository": "rosemaryuser/kernel-r-vendor",
-		"target_path": "kernel/redmi/rosemary",
-		"revision": "lineage-18.1"
+		"repository": "rosemaryuser/android_kernel_redmi_rosemary",
+		"target_path": "kernel/redmi/rosemary"
     }
 ]
