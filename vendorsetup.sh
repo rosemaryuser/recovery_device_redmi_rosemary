@@ -44,11 +44,11 @@ if [ -f "$(gettop)/bootable/recovery/orangefox.cpp" ]; then
 		export OF_MAINTAINER="NYO"
 		export FOX_VERSION=R11.1_1
 		export FOX_BUILD_TYPE="Unofficial"
-        export FOX_VARIANT="A11"
+                export FOX_VARIANT="A11"
 
 		# Device info
 		export FOX_AB_DEVICE=1
-		export OF_VIRTUAL_AB_DEVICE=1
+		export FOX_VIRTUAL_AB_DEVICE=1
 		export TARGET_DEVICE_ALT="secret, maltose"
 		
 		# OTA / DM-Verity / Encryption
@@ -85,13 +85,13 @@ if [ -f "$(gettop)/bootable/recovery/orangefox.cpp" ]; then
 		# 
 		export OF_ENABLE_LPTOOLS=1
 		export OF_ALLOW_DISABLE_NAVBAR=0
-        export OF_QUICK_BACKUP_LIST="/boot;/data;"
+                export OF_QUICK_BACKUP_LIST="/boot;/data;"
 		export FOX_BUGGED_AOSP_ARB_WORKAROUND="1546300800" # Tue Jan 1 2019 00:00:00 GMT
 		export FOX_DELETE_AROMAFM=0
 		export FOX_USE_SPECIFIC_MAGISK_ZIP="$(gettop)/device/redmi/rosemary/Magisk/Magisk.zip"
 
-        export BUNDLED_MAGISK_VER="27.0"
-        export BUNDLED_MAGISK_SUM="f511bd33d3242911d05b0939f910a3133ef2ba0e0ff1e098128f9f3cd0c16610" # Sha256 sum of the prebuilt magisk
+                export BUNDLED_MAGISK_VER="27.0"
+                export BUNDLED_MAGISK_SUM="f511bd33d3242911d05b0939f910a3133ef2ba0e0ff1e098128f9f3cd0c16610" # Sha256 sum of the prebuilt magisk
 
             if [ -f "${FOX_USE_SPECIFIC_MAGISK_ZIP}" -a "$(sha256sum "${FOX_USE_SPECIFIC_MAGISK_ZIP}" 2>/dev/null | awk '{print $1}')" != "${BUNDLED_MAGISK_SUM}" ]
             then
