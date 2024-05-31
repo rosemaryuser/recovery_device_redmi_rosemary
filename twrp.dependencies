@@ -1,7 +1,7 @@
 [
     {
 		"remote": "github",
-		"repository": "rosemaryuser/android_kernel_redmi_rosemary",
+		"repository": "rosemaryuser/kernel-r-vendor",
 		"target_path": "kernel/redmi/rosemary"
     }
 ]
