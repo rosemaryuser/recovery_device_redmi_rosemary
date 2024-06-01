@@ -62,6 +62,8 @@ if [ -f "$(gettop)/bootable/recovery/orangefox.cpp" ]; then
 		export OF_SKIP_FBE_DECRYPTION_SDKVERSION=31 # Don't try to decrypt A12
 		export OF_SKIP_DECRYPTED_ADOPTED_STORAGE=1
                 export OF_FBE_METADATA_MOUNT_IGNORE=1
+		# patch avb20 - some ROM recoveries try to overwrite custom recoveries
+                export OF_PATCH_AVB20= 1
 
 		# Display / Leds
 		export OF_SCREEN_H="2400"
@@ -89,6 +91,8 @@ if [ -f "$(gettop)/bootable/recovery/orangefox.cpp" ]; then
 		export FOX_BUGGED_AOSP_ARB_WORKAROUND="1546300800" # Tue Jan 1 2019 00:00:00 GMT
 		export FOX_DELETE_AROMAFM=0
 		export FOX_USE_SPECIFIC_MAGISK_ZIP="$(gettop)/device/redmi/rosemary/Magisk/Magisk.zip"
+                export OF_NO_TREBLE_COMPATIBILITY_CHECK=1
+		export FOX_USE_XZ_UTILS=1
 
                 export BUNDLED_MAGISK_VER="27.0"
                 export BUNDLED_MAGISK_SUM="f511bd33d3242911d05b0939f910a3133ef2ba0e0ff1e098128f9f3cd0c16610" # Sha256 sum of the prebuilt magisk
